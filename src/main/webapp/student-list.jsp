@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-md navbar-dark"
          style="background-color: tomato">
         <div>
-            <a href="https://www.javaguides.net" class="navbar-brand"> User
+            <a href="cahangirli.com" class="navbar-brand"> User
                 Management App </a>
         </div>
 
@@ -29,12 +29,12 @@
     <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
 
     <div class="container">
-        <h3 class="text-center">List of Users</h3>
+        <h3 class="text-center">List of Students</h3>
         <hr>
         <div class="container text-left">
 
-            <a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
-                New User</a>
+            <a href="<%=request.getContextPath()%>/list?cmd=new" class="btn btn-success">
+                Add New Student</a>
         </div>
         <br>
         <table class="table table-bordered">
@@ -42,23 +42,22 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>Actions</th>
+                <th>Surname</th>
+                <th>Subject</th>
             </tr>
             </thead>
             <tbody>
             <!--   for (Todo todo: todos) {  -->
-            <c:forEach var="user" items="${listUser}">
+            <c:forEach var="student" items="${studentList}">
 
                 <tr>
-                    <td><c:out value="${user.id}" /></td>
-                    <td><c:out value="${user.name}" /></td>
-                    <td><c:out value="${user.email}" /></td>
-                    <td><c:out value="${user.country}" /></td>
-                    <td><a href="edit?id=<c:out value='${user.id}' />">Edit</a>
+                    <td><c:out value="${student.id}" /></td>
+                    <td><c:out value="${student.name}" /></td>
+                    <td><c:out value="${student.surname}" /></td>
+                    <td><c:out value="${student.age}" /></td>
+                    <td><a href="${pageContext.request.contextPath}/list?cmd=update?id=<c:out value='${student.id}' />">Update</a>
                         &nbsp;&nbsp;&nbsp;&nbsp; <a
-                                href="delete?id=<c:out value='${user.id}' />">Delete</a></td>
+                                href="delete?id=<c:out value='${student.id}' />">Delete</a></td>
                 </tr>
             </c:forEach>
             <!-- } -->

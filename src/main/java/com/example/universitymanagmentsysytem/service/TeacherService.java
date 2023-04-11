@@ -1,2 +1,4 @@
-package com.example.universitymanagmentsysytem.service;public interface TeacherService {
+package com.example.universitymanagmentsysytem.service;
+
+public interface TeacherService {
 }

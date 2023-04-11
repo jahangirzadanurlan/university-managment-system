@@ -1,2 +1,4 @@
-package com.example.universitymanagmentsysytem.dao;public class TeacherDao {
+package com.example.universitymanagmentsysytem.dao;
+
+public class TeacherDao {
 }

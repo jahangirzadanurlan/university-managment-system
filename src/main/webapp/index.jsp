@@ -96,13 +96,13 @@
                     <img src="https://pbs.twimg.com/profile_images/1391062171023446020/VvsH1Her_400x400.jpg" alt="Teacher" />
                     <h2 class="title">Teacher List</h2>
                     <p class="subtitle">You can view the full list of teachers of our university here.</p>
-                    <a href="#" class="btn">Go Teacher List</a>
+                    <a href="teacher-list.jsp" class="btn">Go Teacher List</a>
                 </td>
                 <td>
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/007/746/077/small_2x/cute-little-boy-student-posing-cartoon-illustration-cartoon-clipart-vector.jpg" alt="Student" />
                     <h2 class="title">Student List</h2>
                     <p class="subtitle">You can view the full list of students of our university here.</p>
-                    <a href="#" class="btn">Go Student List</a>
+                    <a href="student-list.jsp" class="btn">Go Student List</a>
                 </td>
             </tr>
         </table>

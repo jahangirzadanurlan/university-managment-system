@@ -1,2 +1,4 @@
-package com.example.universitymanagmentsysytem.query;public class TeacherQuery {
+package com.example.universitymanagmentsysytem.query;
+
+public class TeacherQuery {
 }
